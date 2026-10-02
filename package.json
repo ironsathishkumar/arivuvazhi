@@ -1,0 +1,16 @@
+{
+  "name": "arivuvazhi",
+  "private": true,
+  "description": "ArivuVazhi (அறிவுவழி) — AI-powered government exam preparation platform",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "dev:api": "pnpm --filter @arivuvazhi/shared run build && pnpm --parallel --filter @arivuvazhi/shared --filter @arivuvazhi/api run dev",
+    "seed": "pnpm --filter @arivuvazhi/api run seed",
+    "test": "pnpm --filter @arivuvazhi/shared run build && pnpm -r run test",
+    "typecheck": "pnpm --filter @arivuvazhi/shared run build && pnpm -r run typecheck",
+    "lint": "pnpm -r run lint"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

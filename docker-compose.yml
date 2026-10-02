@@ -1,0 +1,24 @@
+services:
+  mongodb:
+    # Atlas Local supports $vectorSearch, which the RAG layer will need.
+    image: mongodb/mongodb-atlas-local:8.0
+    container_name: arivuvazhi-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb-data:/data/db
+      - mongodb-config:/data/configdb
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: arivuvazhi-ollama
+    profiles: ["ai"]
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+
+volumes:
+  mongodb-data:
+  mongodb-config:
+  ollama-data:
