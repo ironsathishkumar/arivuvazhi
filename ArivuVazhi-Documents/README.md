@@ -14,8 +14,10 @@ This documentation defines the current architecture and implementation plan for 
 - Backend: modular monolith initially
 - Avoid unnecessary infrastructure in V1
 
-## Important
-The initial exam has not yet been locked. Exam-specific requirements, syllabus and exam rules should be added after the target exam is confirmed.
+## Exam Program Support
+The product will support TNPSC exam programs incrementally across releases. A program must have its syllabus, approved content, and exam rules configured before it is offered. This does not mean that all TNPSC programs will be available at launch.
+
+Which programs will be offered in each release, and the program-specific syllabus, approved content, and exam rules, remain pending until confirmed and configured.
 
 ## Product Identity
 - Working product name: **ArivuVazhi**
