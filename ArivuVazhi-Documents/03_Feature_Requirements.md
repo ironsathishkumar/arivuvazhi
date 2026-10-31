@@ -17,11 +17,12 @@
 - Subject and topic management for configured programs.
 - Question bank and question lifecycle management, including review of AI-generated questions before approval or publication.
 - Practice sessions for the learner’s active program, with four difficulty modes: **Easy, Medium, Hard, and Very Hard**. Question selection or generation must use the selected mode.
-- Mock tests configured for the active program. Mock exams must follow that program’s configured exam rules and resemble the actual exam as closely as practical.
+- Full mock tests configured for the active program. They must follow that program’s configured timing, marks, question pattern and distribution, scoring, and applicable negative marking, and must resemble the real exam as closely as practical.
+- Short subject-wise and topic-wise mocks for focused practice, scoped to the learner’s active program. These are distinct from full mocks; exact settings such as question counts and durations are not specified.
 - Deterministic backend scoring and enforcement of the active program’s configured exam rules, including applicable negative marking. AI must not replace these calculations.
 - Mistake book and revision scheduling for the active program.
 - Student dashboard with understandable preparation progress and insights for the active program.
-- Initial assessment and study plan for the active program, subject to approved content availability where relevant. Student setup and configuration should be streamlined to reduce unnecessary steps while preserving required choices and setup.
+- Initial assessment and study plan for the active program, subject to approved content availability where relevant. Student setup and configuration should be streamlined by reducing unnecessary steps while preserving required choices and setup; no specific flow changes are defined.
 - Authenticated AI Coach, limited to exam-preparation support. It must use only the active program and authorized learner context, ground factual exam answers in approved knowledge, respect approved language availability, and make limitations clear when supporting knowledge is unavailable. Provider access and secrets remain server-side; student clients must not call AI-provider APIs directly.
 - RAG knowledge base over approved content, with retrieval constrained by the active program, tenant, approval status, and language where applicable.
 - AI question generation with validation and admin review before approval or publication.
@@ -53,7 +54,7 @@ These are future considerations, not confirmed availability or launch commitment
 - **Inactive-program progress retention:** Whether and how to retain progress after a learner switches programs is undecided. Any retained progress must remain separate from active-program progress.
 - **Competitor findings:** Superprep, Testbook, and Adda247 are a review shortlist only. Their specific features, current availability, and comparative findings remain unverified until researched; do not treat them as established product requirements or facts.
 - **Content and language availability:** Availability depends on approved content. Do not promise a language or content coverage before it is confirmed.
-- **Streamlined setup and mock-exam fidelity:** Specific interaction changes, which setup steps to remove or combine, and the practical details or extent of matching the actual exam are undecided; do not assume details beyond reducing unnecessary setup and following configured exam rules.
+- **Setup and mock details:** Setup should be streamlined only by reducing unnecessary steps while preserving required choices; specific flow changes are undecided. Full mocks follow the active program’s configured rules and resemble the real exam. Exact settings for short subject-wise or topic-wise mocks, such as question counts and durations, are unspecified.
 - **Feedback area details:** Placement, presentation, and submission flow for the dedicated feedback area are undecided beyond being easy to find and usable for optional feedback submission.
 
 ## Functional Priority

@@ -11,10 +11,11 @@ Registration
 → Learning Profile for the active program
 → Personalized Plan for the active program
 → Practice using a selected difficulty mode (Easy, Medium, Hard, or Very Hard)
+→ Focused short mock for a subject or topic in the active program
 → Immediate Result
 → Mistake Analysis
 → Revision for the active program
-→ Mock Exam configured for the active program and designed to resemble the actual exam as closely as practical, following that program’s configured exam rules
+→ Full Mock Exam configured for the active program, resembling the real exam and following its configured timing, marks, question pattern and distribution, scoring, and applicable negative marking
 → Performance Analysis for the active program
 → Updated Plan for the active program
 → Repeat
@@ -27,7 +28,7 @@ The learner may change App Language or Exam/Study Language in settings and may s
 
 **Pending decision:** Whether and how to retain a learner's progress for inactive programs has not been confirmed. If retained, it must remain separate from active-program progress.
 
-**Undecided:** Further details of the student setup flow and mock-exam experience, beyond following active-program configured rules and resembling the actual exam as closely as practical, have not been specified.
+**Undecided:** Specific setup-flow changes and exact settings for short subject-wise or topic-wise mocks have not been specified. Do not assume specific setup steps to skip or change, or short-mock question counts, durations, or other settings.
 
 ## AI Tutor Journey
 Student asks question

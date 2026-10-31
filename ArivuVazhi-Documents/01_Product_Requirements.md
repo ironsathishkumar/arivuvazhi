@@ -33,7 +33,7 @@ For example, if User A switches from Group 4 to Group 2, Group 2 alone becomes U
 7. View a personalized daily plan and a clear next action for the active program.
 8. Set up practice using one of four difficulty modes: Easy, Medium, Hard, or Very Hard. Question selection or generation must use the selected difficulty. The active TNPSC program's configuration governs syllabus, scoring, negative marking, and other exam rules.
 9. Practice questions and receive immediate feedback and explanations.
-10. Take mock tests configured for the active program, designed to match the actual exam as closely as practical and governed by that active program's configured exam rules, and review results and performance analysis. **Pending decision:** The specific mock-exam fidelity details have not been defined.
+10. Take full mock exams that resemble the real exam and follow the active TNPSC program's configured rules, explicitly including timing, marks, question pattern and distribution, scoring, and applicable negative marking. Also take short subject-wise or topic-wise mocks for focused practice, scoped to the active program. Review results and performance analysis. The exact settings for short mocks, such as question counts or durations, are undecided.
 11. Review mistakes and explanations, maintain a mistake book, and complete scheduled revisions for the active program.
 12. View understandable progress insights and preparation metrics for the active program.
 13. Receive notifications or reminders where enabled.
@@ -83,7 +83,7 @@ The backend computes scoring and deterministic metrics according to the active p
 
 ## 8. UX Requirements
 - Minimal navigation and a clear next action.
-- Make the student application easy to use and simplify setup to reduce unnecessary configuration steps, without removing approved requirements such as program selection and App Language and Exam/Study Language preferences. **Pending decision:** The specific setup flow and steps have not been defined.
+- Make the student application easy to use and minimize unnecessary setup or configuration steps, while retaining approved requirements such as program selection and App Language and Exam/Study Language preferences. Do not assume particular steps or settings should be removed or changed. **Pending decision:** The specific setup flow and steps have not been defined.
 - Mobile-first student experience.
 - Do not expose technical AI-provider or model complexity to students.
 - Present progress and performance in understandable terms without requiring the learner to interpret raw metrics.

@@ -23,6 +23,7 @@ Next.js App Router + TypeScript + MUI
 ## Administration Scope
 - Introduce supported TNPSC exam programs incrementally across releases; do not imply that every program is available at launch.
 - Manage exam programs and their configured syllabus, scoring, negative marking, and other exam rules within the admin's authorized tenant scope.
+- Authorized admins manage each program's exam-rule configuration used by full mocks, including timing, marks, question pattern and distribution, scoring, and applicable negative marking.
 - Admins may manage only tenants and resources their roles authorize. Enforce tenant isolation in backend authorization and data access; client-side filtering alone is insufficient.
 - Keep program-specific configuration and content associated with the relevant program and tenant.
 
@@ -52,6 +53,11 @@ Next.js App Router + TypeScript + MUI
 
 ## Question Review
 Admin can inspect AI-generated question, source, validation results and edit/approve/reject.
+
+## Mock Test Management
+- Manage full mocks configured for the relevant TNPSC program. Their configuration must follow that program's exam rules and make the mock resemble the actual exam as closely as practical, including timing, marks, question pattern and distribution, scoring, and applicable negative marking.
+- Manage program-scoped subject-wise and topic-wise focused mocks for practice on selected subjects or topics. These are distinct from full mocks; exact settings are not specified here.
+- Keep mock-test configurations within the admin's authorized tenant and program scope.
 
 ## Learner Analytics
 - Provide student performance and analytics only within the admin's authorized tenant and learner scope.

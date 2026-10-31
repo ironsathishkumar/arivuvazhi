@@ -39,7 +39,11 @@ Practice and learner-facing study features must use only the learner's active ex
 - submit
 - results
 
-Mock screens and flow should resemble the actual exam as closely as practical and use the active program's configured exam rules, including applicable scoring and negative marking. Specific mock UI and exam details not established here remain undecided.
+Full mock exams must resemble the real exam and follow the active program's configured timing, marks, question pattern and distribution, scoring, and applicable negative marking.
+
+Provide short subject-wise and topic-wise mocks for focused practice within the learner's active program. Exact short-mock settings remain undecided.
+
+Mock screens and flows should resemble the actual exam as closely as practical. Specific mock UI and exam details not established here remain undecided.
 
 ## AI Coach
 Conversational interface for:
