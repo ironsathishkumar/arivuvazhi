@@ -33,7 +33,7 @@ For example, if User A switches from Group 4 to Group 2, Group 2 alone becomes U
 7. View a personalized daily plan and a clear next action for the active program.
 8. Set up practice using one of four difficulty modes: Easy, Medium, Hard, or Very Hard. Question selection or generation must use the selected difficulty. The active TNPSC program's configuration governs syllabus, scoring, negative marking, and other exam rules.
 9. Practice questions and receive immediate feedback and explanations.
-10. Take full mock exams that resemble the real exam and follow the active TNPSC program's configured rules, explicitly including timing, marks, question pattern and distribution, scoring, and applicable negative marking. Also take short subject-wise or topic-wise mocks for focused practice, scoped to the active program. Review results and performance analysis. The exact settings for short mocks, such as question counts or durations, are undecided.
+10. Take full mock exams that resemble the real exam and follow the active TNPSC program's configured real-exam rules, explicitly including timing, marks, question pattern and distribution, scoring, and applicable negative marking. Full mocks must be clearly distinguished from short subject-wise or topic-wise mocks, which are for focused practice within the active program. Review results and performance analysis. The exact settings for short mocks, such as question counts or durations, are undecided.
 11. Review mistakes and explanations, maintain a mistake book, and complete scheduled revisions for the active program.
 12. View understandable progress insights and preparation metrics for the active program.
 13. Receive notifications or reminders where enabled.
@@ -82,9 +82,12 @@ The backend computes scoring and deterministic metrics according to the active p
 - Keep deterministic responsibilities—such as scoring and exam-rule enforcement—in backend code rather than delegating them to AI.
 
 ## 8. UX Requirements
-- Minimal navigation and a clear next action.
-- Make the student application easy to use and minimize unnecessary setup or configuration steps, while retaining approved requirements such as program selection and App Language and Exam/Study Language preferences. Do not assume particular steps or settings should be removed or changed. **Pending decision:** The specific setup flow and steps have not been defined.
-- Mobile-first student experience.
+- Build a mobile-first student experience that is clean, stylish, and approachable, including for people unfamiliar with the app.
+- Use simple, understandable navigation and a clear screen hierarchy. Where practical, give each screen one primary task and make its main action easy to identify.
+- Make Home answer “What should I do today?” by presenting the active program's daily plan, next action, and preparation progress clearly.
+- Provide a guided first-time flow with clear explanations of required choices and setup steps. Retain required choices, including App Language, Exam/Study Language, active exam program, target date, study availability, and initial assessment. Avoid unnecessary steps, but do not assume or prescribe specific steps or settings to remove, skip, or change. **Pending decision:** The exact setup flow has not been defined.
+- Distinguish full exam mocks from short subject-wise or topic-wise mocks in the student experience: full mocks follow the active program's configured real-exam rules; short mocks support focused practice. Exact short-mock settings remain undecided.
+- Proposed palette only—not an approved final design: deep navy/indigo as the primary color, warm saffron used selectively for key actions or highlights, light cream/off-white backgrounds, and readable dark text. Final visual design remains undecided.
 - Do not expose technical AI-provider or model complexity to students.
 - Present progress and performance in understandable terms without requiring the learner to interpret raw metrics.
 - Keep the learner's active exam program clear and avoid mixing inactive-program content into the active learning experience.
