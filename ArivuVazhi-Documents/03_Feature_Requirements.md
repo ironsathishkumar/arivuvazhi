@@ -17,12 +17,12 @@
 - Subject and topic management for configured programs.
 - Question bank and question lifecycle management, including review of AI-generated questions before approval or publication.
 - Practice sessions for the learner’s active program, with four difficulty modes: **Easy, Medium, Hard, and Very Hard**. Question selection or generation must use the selected mode.
-- Full mock tests configured for the active program. They must follow that program’s configured timing, marks, question pattern and distribution, scoring, and applicable negative marking, and must resemble the real exam as closely as practical.
-- Short subject-wise and topic-wise mocks for focused practice, scoped to the learner’s active program. These are distinct from full mocks; exact settings such as question counts and durations are not specified.
+- Full mock tests configured for the active program. They must follow that program’s configured timing, marks, question pattern and distribution, scoring, and applicable negative marking, and must resemble the real exam as closely as practical. In the student app, clearly distinguish full exam mocks from short subject- or topic-focused mocks.
+- Short subject-wise and topic-wise mocks for focused practice, scoped to the learner’s active program. Present these as distinct from full exam mocks; exact settings such as question counts and durations are not specified.
 - Deterministic backend scoring and enforcement of the active program’s configured exam rules, including applicable negative marking. AI must not replace these calculations.
 - Mistake book and revision scheduling for the active program.
 - Student dashboard with understandable preparation progress and insights for the active program.
-- Initial assessment and study plan for the active program, subject to approved content availability where relevant. Student setup and configuration should be streamlined by reducing unnecessary steps while preserving required choices and setup; no specific flow changes are defined.
+- Initial assessment and study plan for the active program, subject to approved content availability where relevant. Student setup and configuration should be streamlined by reducing unnecessary steps while preserving required choices and setup; provide clear guidance and explanations for first-time users. Do not assume specific steps should be removed or changed.
 - Authenticated AI Coach, limited to exam-preparation support. It must use only the active program and authorized learner context, ground factual exam answers in approved knowledge, respect approved language availability, and make limitations clear when supporting knowledge is unavailable. Provider access and secrets remain server-side; student clients must not call AI-provider APIs directly.
 - RAG knowledge base over approved content, with retrieval constrained by the active program, tenant, approval status, and language where applicable.
 - AI question generation with validation and admin review before approval or publication.
@@ -31,6 +31,17 @@
 - Tenant isolation enforced in backend authorization, data access, and AI knowledge retrieval—not only through client-side filtering. Admin access must be limited to authorized tenants and resources.
 - Optional student feedback about the app, content, explanations, or suggestions. Provide a dedicated, easy-to-find area in the student application that learners can open to submit feedback.
 - AI configuration, usage and audit logging, with evaluation and cost tracking as required by the AI platform design.
+
+## Student-App UX Requirements
+
+- Provide a clean, stylish, mobile-first interface that is approachable to people using the app for the first time, including those unfamiliar with ArivuVazhi.
+- Use simple navigation, a clear screen hierarchy, and understandable labels so students can find key study actions without needing prior knowledge of the app.
+- Keep each screen focused on one primary task where practical; avoid unnecessary configuration or competing calls to action.
+- Make Home answer “What should I do today?” by clearly presenting the daily plan, next action, and preparation progress for the learner’s active program.
+- Guide first-time users with clear explanations of required choices and setup. Retain required choices and avoid unnecessary steps, but do not assume or prescribe specific steps for removal, combination, or change.
+- Make full exam mocks and short subject- or topic-focused mocks visibly distinct in labels and presentation, so students can understand the difference before starting.
+- Keep the dedicated feedback area easy to find and available to open for optional feedback submission.
+- **Proposed, not finalized, visual palette:** deep navy/indigo as the primary color; warm saffron used selectively for key actions or highlights; light cream/off-white backgrounds; and readable dark text. This is a design direction for consideration, not an approved final theme.
 
 ## Phase 2
 
@@ -56,6 +67,7 @@ These are future considerations, not confirmed availability or launch commitment
 - **Content and language availability:** Availability depends on approved content. Do not promise a language or content coverage before it is confirmed.
 - **Setup and mock details:** Setup should be streamlined only by reducing unnecessary steps while preserving required choices; specific flow changes are undecided. Full mocks follow the active program’s configured rules and resemble the real exam. Exact settings for short subject-wise or topic-wise mocks, such as question counts and durations, are unspecified.
 - **Feedback area details:** Placement, presentation, and submission flow for the dedicated feedback area are undecided beyond being easy to find and usable for optional feedback submission.
+- **Student-app visual design:** The palette and UX direction in Student-App UX Requirements are proposals, not finalized design decisions.
 
 ## Functional Priority
 

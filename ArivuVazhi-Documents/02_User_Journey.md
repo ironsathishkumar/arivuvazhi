@@ -3,24 +3,36 @@
 > **Product:** ArivuVazhi (அறிவுவழி) — AI-powered government exam preparation platform
 
 ## Student Journey
+
+### First-time setup and transition to Home
+
 Registration
-→ Choose App Language and Exam/Study Language
-→ Select one active supported TNPSC program
-→ Set Goal
-→ Initial Assessment for the active program
-→ Learning Profile for the active program
-→ Personalized Plan for the active program
+→ Welcome and brief guidance explaining how the app supports TNPSC preparation
+→ Choose App Language and Exam/Study Language, with a clear explanation of what each language preference controls
+→ Select one active supported TNPSC program, with an explanation that the selected program guides the learner’s study experience
+→ Set Goal for the active program
+→ Complete Initial Assessment for the active program, with a brief explanation of how it helps understand the learner’s starting point
+→ Set Learning Profile for the active program, with a brief explanation of how it informs the study plan
+→ View Personalized Plan for the active program
+→ Transition to Home with a clear indication of what to do today
+
+Keep the first-time experience guided and understandable for people new to the app. Explain setup choices in plain language, retain the required choices and steps above, and reduce unnecessary friction without assuming that any particular step should be removed, skipped, combined, or deferred.
+
+### Ongoing learning
+
+Home: See what to do today through the daily plan, a clear next action, and understandable progress for the active program
 → Practice using a selected difficulty mode (Easy, Medium, Hard, or Very Hard)
-→ Focused short mock for a subject or topic in the active program
-→ Immediate Result
-→ Mistake Analysis
-→ Revision for the active program
-→ Full Mock Exam configured for the active program, resembling the real exam and following its configured timing, marks, question pattern and distribution, scoring, and applicable negative marking
-→ Performance Analysis for the active program
-→ Updated Plan for the active program
+→ Choose either a short subject- or topic-focused mock for focused practice, or a full exam mock for exam-style practice
+→ Review immediate results and mistake analysis
+→ Complete revision for the active program
+→ Take a full mock exam configured for the active program, resembling the real exam and following its configured timing, marks, question pattern and distribution, scoring, and applicable negative marking
+→ Review performance analysis for the active program
+→ View the updated plan on Home
 → Repeat
 
-The student experience should reduce unnecessary setup and configuration while retaining the approved journey steps and preferences above. Which steps, if any, can be skipped, combined, deferred, or otherwise simplified is undecided; do not assume specific changes to the steps.
+Clearly distinguish **full exam mocks**, which follow the active program’s configured real-exam rules, from **short subject- or topic-focused mocks**, which support focused practice. Exact settings for short mocks, such as question counts and durations, remain unspecified.
+
+Use simple navigation, clear labels, and a clear screen hierarchy to help learners understand where to go and what to do. Where practical, keep one primary task per screen. The proposed visual direction is a deep navy/indigo primary, selective warm saffron accents for key actions or highlights, light cream/off-white backgrounds, and readable dark text. This is a proposal only, not a finalized design decision.
 
 Provide a dedicated, easy-to-find feedback area that a student can open to optionally submit feedback about the app, content, explanations, or suggestions. Its placement, interaction details, and submission workflow are undecided.
 
